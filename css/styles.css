@@ -1,0 +1,199 @@
+/* Reglas por defecto */
+
+* {
+    box-sizing: border-box;
+    /* https://fonts.google.com */
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Reglas asociadas a las columnas */
+
+.column-1 {
+    width: 100%;
+    color: black;
+    font-size: 35px;
+}
+
+.column-1 h2 {
+    color: black;
+    text-align: left;
+    font-size: 35px;
+}
+
+#section-2 {
+    background-color: #00ff95;
+    text-align: center;
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+}
+
+.column-2 img {
+    width: 100%;
+}
+
+.column-4 {
+    width: 25%;
+    float: left;
+    /* padding: 40px; */
+}
+
+#section-1 h2 {
+    font-size: 55px;
+}
+
+#section-1 h3 {
+    font-size: 40px;
+}
+
+#section-3 h2 {
+    font-size: 55px;
+}
+
+#section-3 h3 {
+    font-size: 40px;
+}
+
+.column-4 p {
+    color: black;
+    font-size: 25px;
+}
+
+.column-4 img {
+    width: 70%;
+    padding-bottom: 20%;
+}
+
+#section-5 {
+    background-color: black;
+    color: white;
+}
+
+#section-5 p {
+    color: white;
+    font-size: 20px;
+}
+
+
+/* Estilos de la página */
+
+#header {
+    text-align: center;
+    background-image: url('../img/banner-2.jpg');
+    background-size: cover;
+    padding: 30vh 100px;
+    height: 100vh;
+    font-size: 50px;
+}
+
+#header h1 {
+    font-size: 90px;
+}
+
+#map {
+    width: 100%;
+    height: 350px;
+    border: 0;
+    /* height="450" style="border:0;" */
+}
+
+.gallery {
+    /*como hay 3 imágenes por fila he de dividir 
+    la horizontal en 3 partes => width: 33.33%;*/
+    width: 50%;
+    float: right;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+
+/*Reglas auxiliares*/
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relleno-lateral {
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+.relleno-columnas {
+    padding-right: 20px;
+}
+
+#section-1 img {
+    padding: 50px;
+}
+
+#section-3 img {
+    padding: 50px;
+}
+
+#section-4 {
+    background-color: rgb(86, 153, 240);
+    float: left;
+    text-align: center;
+    font-size: 45px;
+}
+
+#section-4 img {
+    width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    /* Aquí dentro van las reglas */
+    #header h1 {
+        font-size: 50px;
+    }
+    #header h2 {
+        font-size: 30px;
+    }
+    #header {
+        padding: 30vh 10px;
+    }
+    .flex:not(#section-1) {
+        display: block;
+    }
+    .column-2 {
+        width: 100%;
+    }
+    .gallery {
+        width: 100%;
+    }
+    .relleno-lateral {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .column-4 {
+        width: 50%;
+    }
+    .relleno-columnas {
+        padding-right: 0px;
+    }
+    .gallery {
+        width: 50%;
+    }
+}
