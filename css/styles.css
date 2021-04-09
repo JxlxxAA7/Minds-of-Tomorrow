@@ -37,6 +37,7 @@ body {
 #section-2 {
     background-color: #00ff95;
     text-align: center;
+    padding-bottom: 50px;
     /* padding-top: 50px;
     padding-bottom: 50px; */
 }
@@ -78,16 +79,16 @@ body {
 }
 
 .column-4 img {
-    width: 70%;
-    padding-bottom: 20%;
+    width: 100%;
+    margin-bottom: -4px;
 }
 
-#section-5 {
+#section-6 {
     background-color: black;
     color: white;
 }
 
-#section-5 p {
+#section-6 p {
     color: white;
     font-size: 20px;
 }
@@ -149,12 +150,11 @@ body {
 }
 
 #section-3 img {
-    padding: 50px;
+    width: 100%;
 }
 
-#section-4 {
+#section-5 {
     background-color: rgb(86, 153, 240);
-    float: left;
     text-align: center;
     font-size: 45px;
 }
@@ -193,7 +193,7 @@ body {
     .relleno-columnas {
         padding-right: 0px;
     }
-    .gallery {
-        width: 50%;
+    .flex {
+        display: block;
     }
 }
